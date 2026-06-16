@@ -1,5 +1,7 @@
 import { ArrowLeft, Award, BookOpen, CheckCircle2, GraduationCap, LayoutDashboard, Lightbulb, PlayCircle, Search, Sparkles, UsersRound } from 'lucide-react';
 
+const ASHDOD_LOGO_URL = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5chep-w2me4Nh0nza0yd2hZIYQjIP8mgOe92ChPd0lQ&s=10';
+
 const navItems = ['דף הבית', 'קטלוג קורסים', 'קורסי Campus IL', 'יוצרים קורס', 'הקורסים שלי', 'תעודות'];
 
 const stats = [
@@ -61,7 +63,9 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-white/70 bg-white/85 backdrop-blur-xl">
         <div className="section-shell flex items-center justify-between py-4">
           <div className="flex items-center gap-3">
-            <div className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-ashdod-blue via-ashdod-cyan to-ashdod-green text-lg font-black text-white shadow-lg">AT</div>
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white p-1.5 shadow-lg ring-1 ring-slate-100">
+              <img src={ASHDOD_LOGO_URL} alt="אשדוד - מצוינות עם נשמה" className="h-full w-full object-contain" />
+            </div>
             <div>
               <p className="text-lg font-black text-ashdod-navy">Ashdod Tech</p>
               <p className="text-xs font-semibold text-slate-500">למידה עירונית לתושבי אשדוד</p>
